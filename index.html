@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #e3dfd3; /* Cor de fundo outonal */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.designi.com.br/images/preview/11105426.jpg') center/cover no-repeat; /* Substitua 'background.jpg' pelo caminho da sua imagem de fundo */
+      color: white;
+      text-align: center;
+      padding: 2em 0;
+    }
+
+    header h1, header p {
+      margin: 0;
+    }
+
+    section {
+      padding: 40px 0;
+      position: relative;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #5e4934; /* Marrom escuro para títulos */
+      cursor: pointer;
+      user-select: none;
+    }
+
+    a {
+      color: #985f2a; /* Marrom mais claro para links */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .project {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #5e4934; /* Marrom escuro para o rodapé */
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    /* Marca d'água de Capivara */
+    body::before {
+      content: '';
+      background: url('https://www.designi.com.br/images/preview/11105426.jpg') repeat; /* Substitua 'capivara.jpg' pelo caminho da sua imagem de capivara */
+      opacity: 0.1; /* Ajuste a opacidade conforme necessário */
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: fixed;
+      z-index: -1;
+    }
+
+    .hidden {
+      display: none;
+    }
+    
+    .clickable-title {
+      cursor: pointer;
+      user-select: none;
+    }
+    .contatos{
+      margin-top: 60px;
+      font-size: 120%;
+      color: #482503;
+    }
+    .cont{
+      margin-top: 60px;
+      font-size: 120%;
+      color: #482503;
+    }
+    .project h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #482503;
+}
+.project p {
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #482503;
+
+}
+li{
+  color: #482503; 
+
+}
+
+.container h3{
+  color: white;
+}
+
+p{
+  color: #482503;
+}
+    
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Fernanda Silva da Costa</h1>
+      <h3>Estudante de Análise e Desenvolvimento de Sistemas</h3>
+    </div>
+  </header>
+
+  <section id="about" class="clickable-section">
+    <div class="container overlay containerFoto">
+      <img  class=  "imagem" src="https://media.licdn.com/dms/image/D4E03AQF2gXeXiRvATQ/profile-displayphoto-shrink_800_800/0/1675441490156?e=1706745600&v=beta&t=O5nYfJlHP76paJk9qEmLdFUJaAsLPv_Si5FaQOki5kw" alt="Foto do Aluno">
+      <p class="contatos">Informaçoes de contato </p>
+      <p class="contatos">Telefone: 81998446748</p>
+      <p class="contatos">E-mail: fernandinhacosta.97@hotmail.com</p> 
+      <p class= "cont">LinkedIn: <a href="https://www.linkedin.com/in/fernanda-da-costa-a84440147" target="_blank">Fernanda Costa</a></p>
+    </div>
+  </section>
+
+  <section id="education" class="clickable-section">
+    <div class="container overlay ">
+      <h2 class="clickable-title ">Formação Acadêmica</h2>
+      <p class="hidden">
+        <ul>
+          <li><a analise href="https://www.up.edu.br/graduacao/analise-desenvolvimento-sistemas" target="_blank">Analise e desenvolvimento de sistemas 2 periodo - Universidade positivo (2023)</a></li>
+          <li><a GFT href="https://www.dio.me/certificate/CA7926CB/share" target="_blank">GFT Start Woman Java - Digital Innovation One - DIO (2022)</a></li>
+          <li><a Bootcamp href="https://www.dio.me/certificate/9D1A40A6/share" target="_blank">Bootcamp Santander Fullstack Developer - Digital Innovation One - DIO (2023)</a></li>
+          <li><a impulsofull href="https://www.dio.me/certificate/E437AA5C/share" target="_blank">Impulso Fullstack Web Developer - Digital Innovation One - DIO (2023)</a></li>
+          <li><a santander href="https://www.dio.me/certificate/CA7926CB/share" target="_blank">Santander Code Girls- DIO (2022)</a></li>
+        </ul>
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="clickable-section">
+    <div class="container overlay">
+      <h2 class="clickable-title">Projetos</h2>
+      <p class="hidden">
+        Meus Projetos inicializados:
+        <div class="project">
+          <h3>Orientação a objetos</h3>
+          <p>Projeto inicial, do meu banco de dados utilizando os pilares da orientação a objetos.</p>
+          <a href="https://github.com/frnndslv/dio-project-obj" target="_blank">Dio-Project-Obj</a>
+        </div>
+        <div class="project">
+          <h3>Banco Digital </h3>
+          <p>Criando um Banco Digital com Java e Orientação a Objetos</p>
+          <a href="https://github.com/frnndslv/projetobank.FSC" target="_blank">ProjetoBank.FSC</a>
+        </div>
+        <div class="project">
+          <h3>Aplicação web de cálculo de área </h3>
+          <p>Criando um aplicativo web para cálculo de área de materiais de construção</p>
+          <a href="https://github.com/frnndslv/C.A.P.F" target="_blank">C.A.P.F</a>
+        </div>
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="clickable-section">
+    <div class="container overlay">
+      <h2 class="clickable-title">Habilidades</h2>
+      <p class="hidden">
+        <ul>
+          <li>Java </li>
+          <li>C </li>
+          <li>Html básico</li>
+          <li>css básico</li>
+          <li>Java script básico</script></li>
+
+        </ul>
+      </p>
+    </div>
+  </section>
+
+  <section id="interests" class="clickable-section">
+    <div class="container overlay">
+      <h2 class="clickable-title">Interesses e Hobbies</h2>
+      <div class="hidden">
+        <p>Meus hobbies sao jogar league of legends, assistir series, ler ficção e quadrinhos. Gosto de andar a cavalo e montar quebra cabeças. 
+          me interesso por tecnologias novas e desfios me instigam.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="recommendations" class="clickable-section">
+    <div class="container overlay">
+      <h2 class="clickable-title">Indicações de Leitura</h2>
+      <div class="hidden">
+        <p> <a href="https://m.media-amazon.com/images/I/818uh2CkaIL._SL1438_.jpg" target="_blank">O fim da morte</a></p>
+        <p> <a href="https://i.ebayimg.com/images/g/1ZIAAOSwXDZlQcge/s-l960.jpg" target="_blank">A Space Odyssey Arthur C. Clarke</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="clickable-section">
+    <div class="container overlay">
+      <h2 class="clickable-title">Redes Sociais</h2>
+      <div class="hidden">
+        <p>Email: fernandinhacosta.97@homail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/fernanda-da-costa-a84440147" target="_blank">Fernanda Costa</a></p>
+        <p>GitHub: <a href="https://github.com/frnndslv" target="_blank">frnndslv</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100006808636310" target="_blank">Nanda Costa</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/f__nanda_costa" target="_blank">f__nanda_costa</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Fernanda s. Costa</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const clickableTitles = document.querySelectorAll('.clickable-title');
+
+      clickableTitles.forEach(title => {
+        title.addEventListener('click', () => {
+          const content = title.nextElementSibling;
+
+          content.classList.toggle('hidden');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
